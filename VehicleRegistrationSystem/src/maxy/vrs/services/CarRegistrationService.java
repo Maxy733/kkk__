@@ -12,7 +12,8 @@ public class CarRegistrationService extends VehicleRegistrationService{
 		System.out.println("Enter the number of doors: ");
 		int doors=Integer.parseInt(br.readLine());
 		Car car=new Car(vehicle.getBrand(),vehicle.getModel(),doors);
-		vehicleList.add(car);
+		vehicleList[vehicleCount] = car;
+		vehicleCount++;
 		return car;
 		
 	}

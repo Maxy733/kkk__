@@ -18,7 +18,8 @@ public class MotorCycleRegistrationService extends VehicleRegistrationService{
 			sideCar=false;
 		}
 		Motorcycle cycle = new Motorcycle(vehicle.getBrand(),vehicle.getModel(),sideCar);
-		vehicleList.add(cycle);
+		vehicleList[vehicleCount] = cycle;
+		vehicleCount++;
 		return cycle;
 		
 	}

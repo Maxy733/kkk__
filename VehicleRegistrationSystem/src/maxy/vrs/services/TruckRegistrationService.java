@@ -12,7 +12,8 @@ public class TruckRegistrationService extends VehicleRegistrationService{
 		System.out.println("Enter your maximum capacity: ");
 		int maxCap=Integer.parseInt(br.readLine());
 		Truck truck = new Truck(vehicle.getBrand(),vehicle.getModel(),maxCap);
-		vehicleList.add(truck);
+		vehicleList[vehicleCount] = truck;
+		vehicleCount++;
 		return truck;
 		
 	}
